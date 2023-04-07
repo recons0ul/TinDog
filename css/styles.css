@@ -1,28 +1,45 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-family: "Montserrat";
-  font-weight: 900;
-}
-
-h2 {
-  font-family: "Montserrat";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 p {
   color: #8f8f8f;
+}
+
+/* Header Section  */
+.big-header {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.card-title,
+.feature-title {
+  font-size: 1.5rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections  */
+.colored-section {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -43,22 +60,22 @@ p {
 
 .nav-link {
   font-size: 1.2rem;
+  /* light  */
   font-weight: 300;
 }
 
-.container-fluid {
-  padding: 3% 15%;
-}
-
-#title {
+/* Title section */
+#title .container-fluid {
+  text-align: left;
   background-color: #ff4c68;
-  color: #fff;
+  padding: 3% 15% 7%;
 }
 
-#iphone-mockup {
+.title-image {
   transform: rotate(25deg);
-
-  width: 60%;
+  width: 17%;
+  position: absolute;
+  right: 23%;
 }
 
 /* Download Buttons  */
@@ -69,18 +86,16 @@ p {
 
 /* Features  */
 #features {
-  padding: 7% 15%;
+  position: relative;
 }
 
 .feature-icon {
   color: #ef8172;
-  font-size: 3rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .feature-box {
-  text-align: center;
-  padding: 5%;
+  padding: 4.5%;
 }
 
 .feature-icon:hover {
@@ -89,10 +104,9 @@ p {
 
 /* Testimonials  */
 
-#testimonials {
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -101,17 +115,45 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
-  background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing  */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.pricing-title,
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Footer Section  */
+
+.contact-logo {
+  color: black;
+  padding: 0 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    width: 70%;
+    transform: initial;
+  }
 }
